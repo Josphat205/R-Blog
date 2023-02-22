@@ -3,33 +3,12 @@
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>R-Blog Readme </b></h3>
+  <h3><b>R-BLOG README </b></h3>
 
 </div>
 
-<!-- TABLE OF CONTENTS -->
 
-# 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
-- [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -71,11 +50,10 @@ This project was build using Ruby on Rails
 
 > Features in this project
 
-- **[List of users]**
-- **[users posts]**
-- **[posts comments and likes]**
+- **[Users Section]**
+- **[Post section]**
+- **[Comments section]**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
@@ -161,11 +139,10 @@ Example:
 ```
  -->
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Authors <a name="authors">Josphat Kiploman</a>
 
 👤 **Josphat Kiploman**
 
@@ -174,7 +151,6 @@ Example:
 - LinkedIn: [LinkedIn](https://linkedin.com/in/josphat205)
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -186,7 +162,6 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- SUPPORT -->
 
@@ -195,7 +170,6 @@ Feel free to check the [issues page](../../issues/).
 
 If you like this project you can support me by reaching me through my social media links above
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
 
@@ -204,7 +178,6 @@ If you like this project you can support me by reaching me through my social med
 
 I would like to thank microverse and my group members for the support they gave me during project development
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -214,6 +187,3 @@ I would like to thank microverse and my group members for the support they gave 
 
 This project is [MIT](./LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
