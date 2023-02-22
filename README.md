@@ -140,13 +140,14 @@ To run the project, execute the following command:
 
 To run tests, run the following command:
 
-<!--
-Example command:
+
 
 ```sh
-  bin/rails test test/models/article_test.rb
+  bin/rails test test/models/post.rb
+  bin/rails test test/models/comment.rb
+  bin/rails test test/models/like.rb
 ```
---->
+
 
 ### Deployment
 
@@ -168,31 +169,16 @@ Example:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Josphat Kiploman**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/Josphat205)
+- Twitter: [@twitterhandle](https://twitter.com/josphatloman)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/josphat205)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
 
-## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 
@@ -208,9 +194,8 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
 
-If you like this project...
+If you like this project you can support me by reaching me through my social media links above
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -218,27 +203,12 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
 
-I would like to thank...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FAQ (optional) -->
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
+I would like to thank microverse and my group members for the support they gave me during project development
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 
 <!-- LICENSE -->
 
