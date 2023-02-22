@@ -146,12 +146,20 @@ Example:
 
 👤 **Josphat Kiploman**
 
-- GitHub: [@githubhandle](https://github.com/Josphat205)
-- Twitter: [@twitterhandle](https://twitter.com/josphatloman)
+- GitHub: [@github](https://github.com/Josphat205)
+- Twitter: [@twitter](https://twitter.com/josphatloman)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/josphat205)
 
 
+<!-- FUTURE FEATURES -->
 
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **[Categories and tags:]** Categories and tags help readers navigate the blog and find related content.
+- [ ] **[Search bar]** A search bar allows readers to search for specific topics or keywords within the blog.
+- [ ] **[Sharing buttons]** Sharing buttons make it easy for readers to share the blog post on social media platforms or other websites.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- CONTRIBUTING -->
