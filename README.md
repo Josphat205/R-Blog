@@ -1,100 +1,261 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+<div align="center">
+  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
+  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
 
-# R-Blog
+  <h3><b>Microverse README</b></h3>
 
-This is ruby on rails project that has users, comment, likes and post
+</div>
 
+<!-- TABLE OF CONTENTS -->
 
-## Built With
+# 📗 Table of Contents
 
-- Ruby on rails
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ (OPTIONAL)](#faq)
+- [📝 License](#license)
 
-## Getting Started
-To get a local copy up and running follow these simple example steps.
+<!-- PROJECT DESCRIPTION -->
 
-## Prerequisites
-- Have a good knowledge on how to parse UI designs
-- Have VSCode or other text editor installed. [Link to download VSCode](https://code.visualstudio.com/download)
-- Install node package. [Link to download node](https://nodejs.org/en/download/)
-- Have git installed.[Link to download git](https://git-scm.com/downloads)
-- Create a github repository.
+# 📖 [R-Blog] <a name="about-project"></a>
 
-## Install
-Install all project dependencies by running the command below
+> Describe your project in 1 or 2 sentences.
+
+**[R-blog]** This is a rails blog that has users, posts, comments and likes
+
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+> Describe the tech stack and include only the relevant sections that apply to your project.
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://expressjs.com/">Express.js</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+> Describe between 1-3 key features of the application.
+
+- **[key_feature_1]**
+- **[key_feature_2]**
+- **[key_feature_3]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> Add a link to your deployed project.
+
+- [Live Demo Link](https://yourdeployedapplicationlink.com)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+> Describe how a new developer could make use of your project.
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
+<!--
+Example command:
+
+```sh
+ gem install rails
 ```
- $ bundle install
+ -->
 
- $ bin/rails server
+### Setup
 
- $ http://localhost:3000/
+Clone this repository to your desired folder:
+
+<!--
+Example commands:
+
+```sh
+  cd my-folder
+  git clone git@github.com:myaccount/my-project.git
 ```
+--->
 
-## Error check
+### Install
+
+Install this project with:
+
+<!--
+Example command:
+
+```sh
+  cd my-project
+  gem install
 ```
-$ rubocop .
+--->
+
+### Usage
+
+To run the project, execute the following command:
+
+<!--
+Example command:
+
+```sh
+  rails server
 ```
+--->
 
--Follow the HTML-CSS linter confuguration to docs to setup linters [Link to Microverse linter docs](https://github.com/microverseinc/linters-config)
+### Run tests
 
+To run tests, run the following command:
 
-## Run tests
+<!--
+Example command:
 
-For tracking linters errors locally, you need to follow these steps:
-- For tracking linter errors in HTML file run:
-
-```Ruby
-ruboc
+```sh
+  bin/rails test test/models/article_test.rb
 ```
-```javascript
-npx hint .
+--->
+
+### Deployment
+
+You can deploy this project using:
+
+<!--
+Example:
+
+```sh
+
 ```
+ -->
 
-- For tracking linter errors in CSS file run:
-```javascript
-npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
-```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-```javascript
-npx stylelint "**/*.{css,scss}"
-```
+<!-- AUTHORS -->
 
-- For tracking linter errors in Javascript and React file run:
+## 👥 Authors <a name="authors"></a>
 
-```javascript
-npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
-```
-```javascript
-npx eslint .
-```
+> Mention all of the collaborators of this project.
 
-## Deployment
+👤 **Author1**
 
-- Use GitHub pages to deploy website
-- For more information about publishing sources, see [About github pages](https://pages.github.com/)
+- GitHub: [@githubhandle](https://github.com/githubhandle)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-## Authors
+👤 **Author2**
 
- **Josphat Kiploman**
+- GitHub: [@githubhandle](https://github.com/githubhandle)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-- GitHub: [@Josphat205](https://github.com/Josphat205) 
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/josphatloman/)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🤝 Contributing
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+> Describe 1 - 3 features you will add to the project.
+
+- [ ] **[new_feature_1]**
+- [ ] **[new_feature_2]**
+- [ ] **[new_feature_3]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-## Show your support
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Give a ⭐️ if you liked this project!
+<!-- SUPPORT -->
 
-## Acknowledgments
+## ⭐️ Show your support <a name="support"></a>
 
-- Microverse 
-- Coding Partners
-- Code Reviewers
+> Write a message to encourage readers to support your project
 
-## 📝 License
+If you like this project...
 
-This project is [MIT](./MIT.md) licensed.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+> Give credit to everyone who inspired your codebase.
+
+I would like to thank...
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAQ (optional) -->
+
+## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+
+> Add at least 2 questions new developers would ask when they decide to use your project.
+
+- **[Question_1]**
+
+  - [Answer_1]
+
+- **[Question_2]**
+
+  - [Answer_2]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
