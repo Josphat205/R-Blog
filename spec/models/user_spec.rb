@@ -27,4 +27,15 @@ RSpec.describe User, type: :model do
     @user.posts_counter = 'One'
     expect(@user).to_not be_valid
   end
+  it 'fetch recent posts' do
+    @user.save
+    @post = Post.create(
+      title: 'A new Post',
+      text: 'Web Developer',
+      author_id: @user.id,
+      comments_counter: 0,
+      likes_counter: 0
+    )
+    expect(@user.fetch_recent_posts.count).to eq(1)
+  end
 end
