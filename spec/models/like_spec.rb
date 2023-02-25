@@ -22,4 +22,8 @@ RSpec.describe Like, type: :model do
     @comment = Comment.create(text: 'Welcome World!!', author_id: @user.id, post_id: @post.id)
     expect(@comment.author_id).to_not eq(30)
   end
+  it 'update_likes_counter should increase likes_counter by one' do
+    @like = Like.create(author_id: @user.id, post_id: @post.id)
+    expect(@like.update_likes_counter.likes_counter).to eq(2)
+  end
 end
