@@ -45,4 +45,11 @@ RSpec.describe Post, type: :model do
     eu, pretium quis,'
     expect(@post).to_not be_valid
   end
+  it 'fetch_recent_comments' do
+    @user.save
+    @post.save
+    @comment = Comment.create(text: 'Hello World!', author_id: @user.id, post_id: @post.id)
+    @comment = Comment.create(text: 'Welcome World!!', author_id: @user.id, post_id: @post.id)
+    expect(@post.fetch_recent_comments.count).to eq(2)
+  end
 end
