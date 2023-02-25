@@ -52,4 +52,11 @@ RSpec.describe Post, type: :model do
     @comment = Comment.create(text: 'Welcome World!!', author_id: @user.id, post_id: @post.id)
     expect(@post.fetch_recent_comments.count).to eq(2)
   end
+  it 'update_posts_counter' do
+    @user.save
+    @post.save
+    @comment = Comment.create(text: 'Hello World!', author_id: @user.id, post_id: @post.id)
+    @comment = Comment.create(text: 'Welcome World!!', author_id: @user.id, post_id: @post.id)
+    expect(@post.update_posts_counter.posts_counter).to eq(2)
+  end
 end
