@@ -20,8 +20,6 @@ RSpec.describe 'Posts', type: :request do
       expect(response.body).to include('Here is a list of posts for a given user')
     end
   end
-
-
   describe 'GET /show' do
     before(:each) do
       @user = User.create(name: 'James', posts_counter: 0, photo: '', bio: '')
