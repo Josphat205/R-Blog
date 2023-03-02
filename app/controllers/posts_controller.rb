@@ -3,11 +3,11 @@ class PostsController < ApplicationController
     @user = User.find(params[:user_id])
     @posts = @user.posts
   end
-  
+
   def show
     @post = Post.find(params[:id])
   end
-  
+
   def create
     @post = Post.create(post_params)
     @post.user = current_user
@@ -22,8 +22,9 @@ class PostsController < ApplicationController
       end
     end
   end
-  
-  private 
+
+  private
+
   def post_params
     params.require(:post).permit(:title, :text)
   end
