@@ -1,1 +1,20 @@
-<h1>Here is a single user</h1>
+<section class="w-75 mx-auto mt-5">
+        <div class="card">
+          <div class="card-body d-flex justify-content-between ">
+              <div class="">
+              <h5><%= @user.name %>#<%= @user.id %></h5> 
+              <%= link_to 'Posts', user_posts_path(@user), class: 'btn-sm btn btn-info' %>
+              <%= link_to 'Back', root_path(@user), class: 'btn-sm btn btn-secondary' %>
+              </div>
+              <span>
+              <p class="text-center d-flex align-items-end">Number of posts:<%= @user.posts.count %></p>
+              <small class="text-danger"><%= @user.created_at.to_fs(:short) %></small>
+              </span>
+              
+          </div>
+          <div class="card-footer">
+            <p><strong>Bio:</strong><%= @user.bio %></p>
+          </div
+        </div>
+        <%= render partial: 'posts/posts'%>
+  </section>
