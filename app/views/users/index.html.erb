@@ -1,1 +1,19 @@
-<h1> Here is a list of users for a given user </h1>
+
+    <div class="w-75 mx-auto mt-5">
+      <div class="card">
+      <div class="card-header">
+      <h4 class="fw-dark">Users:<strong><%= @users.count%></strong></h4>
+      </div>
+          <% @users.each do |u|%>
+     <div class="card-body">
+       <div class="d-flex justify-content-between">
+         <div>
+             <h3>Username: <%= u.name %></h3>
+             <%= link_to 'show user', user_path(u), class: 'btn-sm btn btn-primary' %>
+         </div>
+         <p class=""> Number of posts: <%= u.posts.count %> </p>
+        </div>
+      </div>
+      <% end %>
+      </div>
+    </div>
