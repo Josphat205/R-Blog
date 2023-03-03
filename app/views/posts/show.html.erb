@@ -1,25 +1,72 @@
 
-<section class="w-75 mx-auto mt-5">
-      <div class="card">
-        <div class="card-body d-flex justify-content-between">
-        <div>
-        <h4><%= @post.title%> by user  <%= @post.author_id %></h4>
-        <p><%= @post.text%></p>
-        <%= link_to 'Delete', user_post_path(@post.id), method: :delete, class: 'btn-sm btn btn-danger' %>
-        <%= link_to 'Back', user_posts_path, class: 'btn-sm btn btn-secondary' %>  
-        </div>
-        <small>Comments:<%= @post.comments.count%> Likes:<%= @post.likes.count%></small>
-        </div>
-        <div class="card-footer">
-        <h6>Comments:<%=@post.comments.count %></h6>
-        <% @post.comments.each do |comment|%>
-          <h5>User: <%=comment.author_id%></h5>
-          <p>comment: <%= comment.text%></p>
-          <% end%>
-        </div>
+<div class="container">
+  <% if flash[:success] %>
+  <div class="alert alert-success"><%= flash[:success] %></div>
+  <% end %>
+  <div class="card mb-3">
+    <div class="card-title d-flex justify-content-between p-2">
+      <h6 class="">Post:<%= @post.id %></h6>
+      <div class="d-flex justify-content-between p-2">
+        <p class="mx-4" style="position: relative">
+          Comments:
+          <span
+            style="
+              position: absolute;
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              background: blue;
+              color: white;
+              font-size: 12px;
+              text-align: center;
+            "
+            class=""
+            ><%= @post.comments_counter %></span
+          >
+        </p>
+        <p class="mx-4" style="position: relative">
+          Likes:
+          <span
+            style="
+              position: absolute;
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              background: green;
+              color: white;
+              font-size: 12px;
+              text-align: center;
+            "
+            class=""
+            ><%= @post.likes_counter %></span
+          >
+        </p>
       </div>
-</section>
-
+    </div>
+    <div class="card-body">
+      <p class="card-text">post: <%= @post.text %></p>
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="link">
+          <%= link_to 'Delete', user_post_path(@post.id), method: :delete,
+          class: 'btn-sm btn btn-danger' %> <%= link_to 'Back', user_posts_path,
+          class: 'btn-sm btn btn-default' %>
+        </div>
+        <div class="like"><%= render 'posts/like_form' %></div>
+      </div>
+      <%= link_to 'Add Comment', new_user_post_comment_url(@post.author, @post),class: 'btn-sm btn btn-outline-success mt-3 text-primary' %>
+    </div>
+    <section class="py-1 container">
+      <h6>Comments:</h6>
+      <div class="post">
+        <% if @post.comments.length == 0 %>
+        <p class="mt-3">No comments Available!</p>
+        <% else %> <% @post.comments.each do |comment| %>
+        <p class="mt-3"><%= comment.author.name %>: <%= comment.text %></p>
+        <% end %> <% end %>
+      </div>
+    </section>
+  </div>
+</div>
 
 
 
