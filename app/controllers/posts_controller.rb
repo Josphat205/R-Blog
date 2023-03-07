@@ -1,13 +1,12 @@
-# frozen_string_literal: true
-
 class PostsController < ApplicationController
   def index
     @user = User.find(params[:user_id])
-    @posts = @user.posts.all
+    @posts = @user.posts.includes(:comments)
   end
 
   def show
-    @post = Post.find(params[:id])
+    @user = User.find(params[:user_id])
+    @post = @user.posts.find(params[:id])
   end
 
   def new
@@ -22,13 +21,17 @@ class PostsController < ApplicationController
     @post.likes_counter = 0
     @post.comments_counter = 0
 
-    if @post.save
-      flash[:success] = 'Post saved successfully'
-      redirect_to user_post_path(current_user, @post.id)
-    else
-      newpost = Post.new
-      flash.now[:error] = 'Error: post could not be saved'
-      render :new, locals: { newpost: }
+    respond_to do |format|
+      format.html do
+        if @post.save
+          flash[:success] = 'Post saved successfully'
+          redirect_to user_post_path(current_user, @post.id)
+        else
+          newpost = Post.new
+          flash.now[:error] = 'Error: post could not be saved'
+          render :new, locals: { newpost: }
+        end
+      end
     end
   end
 
