@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe 'Post', type: :feature do
@@ -29,7 +31,7 @@ RSpec.describe 'Post', type: :feature do
 
     it 'Should display  the number of posts the user has posted' do
       visit "/users/#{@user.id}/posts"
-      expect(page).to have_content("#{@user.posts_counter}")
+      expect(page).to have_content(@user.posts_counter.to_s)
     end
 
     it 'Should display the post title' do
@@ -60,7 +62,7 @@ RSpec.describe 'Post', type: :feature do
     end
 
     it 'Should redirect to the posts show page when clicked' do
-      click_link"Read more"
+      click_link 'Read more'
       expect(page).to have_current_path("/users/#{@user.id}/posts/#{@post.id}")
     end
   end

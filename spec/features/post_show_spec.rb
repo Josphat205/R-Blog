@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe 'Post', type: :feature do
   describe 'show page' do
-     before :each do
+    before :each do
       @user = User.create(name: 'Tom',
                           bio: 'Teacher from Mexico.',
                           photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
