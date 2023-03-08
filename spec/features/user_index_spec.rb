@@ -32,5 +32,9 @@ RSpec.describe 'Index page', type: :feature do
       click_on 'show user', match: :first
       expect(page).to have_current_path user_path([@user.id + 1])
     end
+    it 'should have number of posts each user has' do
+      visit users_path(@user.id)
+      expect(page).to have_content("Posts: #{@user.posts_counter}")
+    end
   end
 end
