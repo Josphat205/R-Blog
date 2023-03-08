@@ -38,6 +38,8 @@
           <div class="post-body">
             <h6><b><%= post.id%>.</b> <%= post.title%></h6>
             <p>comment: <%= post.text%></p>
+            <%= link_to 'show', user_post_path(@user, post), class: 'btn-sm
+            btn btn-primary' %>
           </div>
           <p class="mx-4" style="position: relative">
             Comments:
