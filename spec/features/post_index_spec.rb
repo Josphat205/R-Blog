@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Post', type: :system do
+RSpec.describe 'Post', type: :feature do
   describe 'index page' do
     before :each do
       @user = User.create(name: 'Tom',
@@ -18,14 +18,17 @@ RSpec.describe 'Post', type: :system do
     end
 
     it 'Should display the  profile picture of the user' do
+      visit "/users/#{@user.id}/posts"
       expect(page).to have_content(@user.photo)
     end
 
     it 'Should display name of the user' do
+      visit "/users/#{@user.id}/posts"
       expect(page).to have_content(@user.name)
     end
 
     it 'Should display  the number of posts the user has posted' do
+      visit "/users/#{@user.id}/posts"
       expect(page).to have_content("#{@user.posts_counter}")
     end
 
