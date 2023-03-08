@@ -14,10 +14,14 @@ class CommentsController < ApplicationController
     @post = Post.find(params[:post_id])
     @comment = current_user.comments.new(post_id: @post.id, author_id: current_user.id, text: comment_params)
     @comment.post_id = @post.id
-    @comment.author_id = current_user.id
-    @comment.save
-    flash[:success] = 'Comment saved successfully'
-    redirect_to user_post_path(current_user, @post.id)
+    if @comment.save
+      flash[:success] = 'Comment saved successfully'
+      redirect_to user_post_path(current_user, @post.id)
+    else
+      newcomment = Comment.new
+      flash.now[:error] = 'Error: comment could not be saved'
+      render :new, locals: { newcomment: }
+    end
   end
 
   def comment_params

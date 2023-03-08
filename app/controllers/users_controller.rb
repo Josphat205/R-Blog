@@ -6,6 +6,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find(params[:id])
+    @user_id = params[:id]
+    @user = User.includes(posts: %i[author]).find(params[:id].to_i)
   end
 end
