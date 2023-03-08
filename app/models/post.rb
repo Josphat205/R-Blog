@@ -16,6 +16,6 @@ class Post < ApplicationRecord
   end
 
   def fetch_recent_comments
-    comments.order('created_at DESC').last(5)
+  Comment.includes(:post).where(post_id: id).order(created_at: :desc).limit(5)
   end
 end
