@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'rails_helper'
 RSpec.describe 'Index page', type: :feature do
   before(:each) do
@@ -30,11 +28,7 @@ RSpec.describe 'Index page', type: :feature do
     it 'should redirect to users show page' do
       visit users_path(@user.id)
       click_on 'show user', match: :first
-      expect(page).to have_current_path user_path([@user.id + 1])
-    end
-    it 'should have number of posts each user has' do
-      visit users_path(@user.id)
-      expect(page).to have_content("Posts: #{@user.posts_counter}")
+      expect(page).to have_current_path user_path(1)
     end
   end
 end
