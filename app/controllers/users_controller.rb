@@ -6,7 +6,11 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user_id = params[:id]
-    @user = User.includes(posts: %i[author]).find(params[:id].to_i)
+    @user = User.includes(posts: %i[author]).find(current_user.id)
   end
+
+  # def destroy 
+  #   after_sign_out_path_for
+  # end
+
 end
