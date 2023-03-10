@@ -35,19 +35,13 @@
             <div class="post-container">
               <h6 class="mb-1"><b>Title: </b><%=post.title%></h6>
               <p>content: <%=post.text%></p>
-          </div>
-           <div class="counter">
+            </div>
+            <div class="counter">
             <small>comments: </b><%=post.comments_counter%></b> </small>
             <small>likes: </b><%=post.likes_counter%></b> </small>
+            </div>
            </div>
-           </div>
-          <div class="comments">
-            <% post.fetch_recent_comments.each do |comment|%>
-            <p>Comment: <%=comment.text%></p>
-            <%end%>
-          </div>
-          </div>
-          <div class="">
+           <div class="">
             <% if can? :read , post %>
             <%= link_to 'Read more', user_post_path(@user, post.id), class: 'btn-sm btn btn-primary' %>
             <%end%>
@@ -55,7 +49,13 @@
             <%= link_to  'delete', user_post_path(@user, post.id), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn-sm btn btn-danger' %>
             <%end%>
             <%= link_to 'Back', user_path(@user), class: 'btn-sm btn btn-default' %>
-           </div>
+          </div>
+          <div class="comments">
+            <% post.fetch_recent_comments.each do |comment|%>
+            <p>Comment: <%=comment.text%></p>
+            <%end%>
+          </div>
+          </div>
         </li>
         <%end%>
       </ul>
