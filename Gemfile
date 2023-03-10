@@ -13,7 +13,7 @@ gem 'sprockets-rails'
 gem 'pg', '~> 1.1'
 
 gem 'devise'
-
+gem 'cancancan'
 # add bootstrap for styling
 gem 'cssbundling-rails'
 
