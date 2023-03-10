@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 20_230_310_100_741) do
+ActiveRecord::Schema[7.0].define(version: 20_230_310_125_537) do
   # These are extensions that must be enabled in order to support this database
   enable_extension 'plpgsql'
 
@@ -22,6 +22,11 @@ ActiveRecord::Schema[7.0].define(version: 20_230_310_100_741) do
     t.datetime 'updated_at', null: false
     t.index ['author_id'], name: 'index_comments_on_author_id'
     t.index ['post_id'], name: 'index_comments_on_post_id'
+  end
+
+  create_table 'json_web_tokens', force: :cascade do |t|
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
   end
 
   create_table 'likes', force: :cascade do |t|
@@ -66,6 +71,7 @@ ActiveRecord::Schema[7.0].define(version: 20_230_310_100_741) do
     t.datetime 'confirmation_sent_at'
     t.string 'unconfirmed_email'
     t.string 'role', default: 'user'
+    t.string 'password_digest'
     t.index ['email'], name: 'index_users_on_email'
     t.index ['reset_password_token'], name: 'index_users_on_reset_password_token', unique: true
   end
