@@ -7,9 +7,6 @@
 
 </div>
 
-
-
-
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 [R-Blog] <a name="about-project"></a>
@@ -54,7 +51,6 @@ This project was build using Ruby on Rails
 - **[Post section]**
 - **[Comments section]**
 
-
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>.
@@ -74,8 +70,6 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-
-
 ```sh
  gem install rails
 ```
@@ -84,48 +78,36 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-
-
 ```sh
   git clone git@github.com:Josphat205/R-Blog.git
 ```
 
-
 ### Install
 
 Install this project with:
-
-
 
 ```sh
   cd R-Blog
   code .
 ```
 
-
 ### Usage
 
 To run the project, execute the following command:
-
-
 
 ```sh
   rails server
 ```
 
-
 ### Run tests
 
 To run tests, run the following command:
-
-
 
 ```sh
   bin/rails test test/models/post.rb
   bin/rails test test/models/comment.rb
   bin/rails test test/models/like.rb
 ```
-
 
 ### Deployment
 
@@ -149,7 +131,6 @@ Example:
 - GitHub: [@github](https://github.com/Josphat205)
 - Twitter: [@twitter](https://twitter.com/josphatloman)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/josphat205)
-
 
 <!-- FUTURE FEATURES -->
 
@@ -185,9 +166,6 @@ If you like this project you can support me by reaching me through my social med
 
 
 I would like to thank microverse and my group members for the support they gave me during project development
-
-
-
 
 <!-- LICENSE -->
 
