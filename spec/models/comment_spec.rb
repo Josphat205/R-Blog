@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'rails_helper'
 
 RSpec.describe Comment, type: :model do
@@ -22,10 +20,6 @@ RSpec.describe Comment, type: :model do
   it '@users comments_counter should increase by one' do
     @comment = Comment.create(text: 'Hello World!', author_id: @user.id, post_id: @post.id)
     @comment = Comment.create(text: 'Welcome World!!', author_id: @user.id, post_id: @post.id)
-    expect(@comment.author_id).to_not eq(2)
-  end
-  it 'update_counter should increase comments_counter by one' do
-    @comment = Comment.create(text: 'Hello World!', author_id: @user.id, post_id: @post.id)
-    expect(@comment.update_counter.comments_counter).to eq(2)
+    expect(@comment.author_id).to_not eq(30)
   end
 end

@@ -34,8 +34,12 @@ Style/AndOr:
   Enabled: false
 Style/DefWithParentheses:
   Enabled: false
+Style/GlobalStdStream:
+  Enabled: false
+Style/SpecialGlobalVars:
+  Enabled: false
 Style/FrozenStringLiteralComment:
-  EnforcedStyle: always
+  EnforcedStyle: never
 
 Layout/HashAlignment:
   EnforcedColonStyle: key
@@ -55,6 +59,8 @@ Lint/StructNewOverride:
 Lint/ScriptPermission:
   Enabled: false
 Style/HashEachMethods:
+  Enabled: false
+Style/RedundantFetchBlock:
   Enabled: false
 Style/HashTransformKeys:
   Enabled: false

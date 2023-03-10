@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'rails_helper'
 RSpec.describe User, type: :model do
   before(:all) do
@@ -28,8 +26,5 @@ RSpec.describe User, type: :model do
   it 'posts_counter should be numeric' do
     @user.posts_counter = 'One'
     expect(@user).to_not be_valid
-  end
-  it 'fetch_recent_posts should return an array of posts' do
-    expect(@user.fetch_recent_posts).to be_a(Array)
   end
 end

@@ -3,9 +3,9 @@
 one:
   name: MyString
   photo: MyString
-  bio: MyString
+  bio: MyText
 
 two:
   name: MyString
   photo: MyString
-  bio: MyString
+  bio: MyText

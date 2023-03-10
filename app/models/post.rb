@@ -1,10 +1,8 @@
-# frozen_string_literal: true
-
 class Post < ApplicationRecord
-  belongs_to :author, class_name: 'User'
   has_many :comments
   has_many :likes
-
+  belongs_to :author, class_name: 'User', foreign_key: 'author_id'
+  validates :title, :text, presence: true
   after_save :update_posts_counter
 
   validates :title, presence: true, length: { maximum: 250 }
@@ -16,6 +14,6 @@ class Post < ApplicationRecord
   end
 
   def fetch_recent_comments
-    Comment.includes(:post).where(post_id: id).order(created_at: :desc).limit(5)
+    comments.includes([:author]).last(5)
   end
 end
