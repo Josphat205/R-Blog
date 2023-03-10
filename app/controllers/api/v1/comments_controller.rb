@@ -24,16 +24,7 @@ class Api::V1::CommentsController < ApplicationController
     render json: { message: 'Comment not found' }, status: :not_found
   end
 
-  def create
-    @user = User.find_by_id!(params[:user_id])
-    @post = Post.find(params[:post_id])
-    @comment = Comment.new(text: params[:text], author: current_user.id, post_id: @post.id)
-    if @comment.save
-      render json: @comment, status: :created
-    else
-      render json: { message: 'Comment not created' }, status: :unprocessable_entity
-    end
-  end
+ 
 
   private
 
