@@ -48,8 +48,13 @@
           </div>
           </div>
           <div class="">
+            <% if can? :read , post %>
             <%= link_to 'Read more', user_post_path(@user, post.id), class: 'btn-sm btn btn-primary' %>
-          <%= link_to 'Back', user_path(@user), class: 'btn-sm btn btn-default' %>
+            <%end%>
+            <% if can? :destroy , post %>
+            <%= link_to  'delete', user_post_path(@user, post.id), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn-sm btn btn-danger' %>
+            <%end%>
+            <%= link_to 'Back', user_path(@user), class: 'btn-sm btn btn-default' %>
            </div>
         </li>
         <%end%>
